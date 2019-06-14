@@ -1,5 +1,5 @@
 docker build -t anandahlawat90/multi-client:latest -t anandahlawat90/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t anandahlawat90/mulit-server:latest -t anandahlawat90/mulit-server:$SHA -f ./server/Dockerfile ./server
+docker build -t anandahlawat90/mulit-server:latest -t anandahlawat90/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t anandahlawat90/multi-worker:latest -t anandahlawat90/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 docker push anandahlawat90/multi-client:latest
 docker push anandahlawat90/multi-server:latest
