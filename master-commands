@@ -1,0 +1,27 @@
+Commands -
+Check status of KubeCtl -
+- kubectl get pods -n kube-system
+- kubectl apply -f client-node-port.yml
+- kubectl get pods
+- kubectl get services
+- kubectl delete -f <client-node-port.yml>
+
+- minikube ip
+
+- Get detailed information about an object
+  kubectl describe <object type> client-pods
+
+# Starting minkube
+- minikube start --vm-driver hyperv --hyperv-virtual-switch "Virtual Network Kubernates"
+
+- kubectl describe <object_type> <object_name>
+
+- Get-NetConnectionProfile
+
+- Set-NetConnectionProfile -InterfaceIndex 23 -NetworkCategory Private
+
+- close minikube -- sudo poweroff
+
+- kubectl create secret generic <secret_name> --from-literal
+
+create secret generic pgpassword --from-literal PGPASSWORD=samplepwdsecret
