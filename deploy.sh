@@ -5,9 +5,9 @@ docker push anandahlawat90/multi-client:latest
 docker push anandahlawat90/multi-server:latest
 docker push anandahlawat90/multi-worker:latest
 
-docker push anandahlawat90/multi-client:latest:$SHA
-docker push anandahlawat90/multi-server:latest:$SHA
-docker push anandahlawat90/multi-worker:latest:$SHA
+docker push anandahlawat90/multi-client:$SHA
+docker push anandahlawat90/multi-server:$SHA
+docker push anandahlawat90/multi-worker:$SHA
 
 kubectl apply -f k8s
 kubectl set image deployments/server-deployment server=anandahlawat90/multi-server:$SHA
